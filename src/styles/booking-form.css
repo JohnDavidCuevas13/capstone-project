@@ -1,0 +1,60 @@
+/* booking-form.css */
+
+.booking__form {
+  margin-bottom: 1rem;
+}
+
+.booking__form input,
+.booking__form select,
+.booking__form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.booking__form input::placeholder,
+.booking__form select::placeholder,
+.booking__form textarea::placeholder {
+  color: #999;
+}
+
+.booking__form.d-inline-block {
+  display: inline-block;
+  width: calc(50% - 0.5rem);
+  margin-right: 0.5rem;
+}
+
+.booking__form.d-inline-block:last-child {
+  margin-right: 0;
+}
+
+textarea.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.time__picker {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .booking__form.d-inline-block {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .booking__form.d-inline-block:last-child {
+    margin-bottom: 1rem;
+  }
+}
